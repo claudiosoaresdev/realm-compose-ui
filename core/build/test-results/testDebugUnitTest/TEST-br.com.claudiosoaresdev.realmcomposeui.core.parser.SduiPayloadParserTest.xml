@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.com.claudiosoaresdev.realmcomposeui.core.parser.SduiPayloadParserTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-07-21T13:21:18.157Z" hostname="MacBook-Pro-de-Claudio.local" time="0.025">
+  <properties/>
+  <testcase name="componente invisivel nao entra na arvore" classname="br.com.claudiosoaresdev.realmcomposeui.core.parser.SduiPayloadParserTest" time="0.003"/>
+  <testcase name="componente de tipo desconhecido e descartado" classname="br.com.claudiosoaresdev.realmcomposeui.core.parser.SduiPayloadParserTest" time="0.001"/>
+  <testcase name="tema ausente cai no fallback do design system" classname="br.com.claudiosoaresdev.realmcomposeui.core.parser.SduiPayloadParserTest" time="0.006"/>
+  <testcase name="campo obrigatorio ausente descarta apenas o componente" classname="br.com.claudiosoaresdev.realmcomposeui.core.parser.SduiPayloadParserTest" time="0.0"/>
+  <testcase name="bottomNavigation preserva ordem e estado desabilitado" classname="br.com.claudiosoaresdev.realmcomposeui.core.parser.SduiPayloadParserTest" time="0.01"/>
+  <testcase name="numeros do json chegam como Number e viram Int e Float" classname="br.com.claudiosoaresdev.realmcomposeui.core.parser.SduiPayloadParserTest" time="0.0"/>
+  <testcase name="acao de tipo novo vira Unsupported em vez de excecao" classname="br.com.claudiosoaresdev.realmcomposeui.core.parser.SduiPayloadParserTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

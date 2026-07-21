@@ -1,0 +1,940 @@
+{
+  "appConfig": {
+    "id": "sigil-config",
+    "appName": "Sigil",
+    "defaultScreen": "house_home",
+    "defaultHouse": "targaryen",
+    "supportedSchemaVersions": [
+      "1.0.0"
+    ],
+    "supportedLayouts": [
+      "house_home_v1"
+    ]
+  },
+  "sdui": [
+    {
+      "id": "house-home-targaryen",
+      "screen": "house_home",
+      "house": "targaryen",
+      "version": 1,
+      "schemaVersion": "1.0.0",
+      "layout": "house_home_v1",
+      "payload": {
+        "analytics": {
+          "screenName": "house_home_targaryen",
+          "tags": {
+            "house": "targaryen",
+            "faction": "black"
+          }
+        },
+        "theme": {
+          "id": "targaryen-dark",
+          "statusBarStyle": "light",
+          "navigationBarStyle": "dark",
+          "background": {
+            "color": "#050505",
+            "image": "/assets/targaryen/background.png",
+            "contentScale": "crop",
+            "overlayColor": "#66050505"
+          },
+          "colors": {
+            "primary": "#E53935",
+            "primaryDark": "#8F1111",
+            "secondary": "#C39A5B",
+            "surface": "#101010",
+            "surfaceVariant": "#171717",
+            "outline": "#3A2525",
+            "textPrimary": "#F5F5F2",
+            "textSecondary": "#A8A8A5",
+            "textDisabled": "#626262"
+          },
+          "typography": {
+            "display": {
+              "fontFamily": "serif",
+              "fontSizeSp": 40,
+              "fontWeight": 500,
+              "lineHeightSp": 46,
+              "letterSpacingSp": 1.2
+            },
+            "headline": {
+              "fontFamily": "serif",
+              "fontSizeSp": 24,
+              "fontWeight": 500,
+              "lineHeightSp": 30
+            },
+            "title": {
+              "fontFamily": "sans-serif",
+              "fontSizeSp": 18,
+              "fontWeight": 600,
+              "lineHeightSp": 24
+            },
+            "body": {
+              "fontFamily": "sans-serif",
+              "fontSizeSp": 16,
+              "fontWeight": 400,
+              "lineHeightSp": 24
+            },
+            "label": {
+              "fontFamily": "sans-serif",
+              "fontSizeSp": 13,
+              "fontWeight": 600,
+              "lineHeightSp": 18,
+              "letterSpacingSp": 1.2
+            }
+          },
+          "shapes": {
+            "smallRadiusDp": 12,
+            "cardRadiusDp": 22,
+            "largeRadiusDp": 28,
+            "pillRadiusDp": 999
+          },
+          "spacing": {
+            "screenHorizontalDp": 20,
+            "screenTopDp": 20,
+            "screenBottomDp": 112,
+            "sectionGapDp": 24,
+            "itemGapDp": 12
+          }
+        },
+        "screen": {
+          "orientation": "vertical",
+          "scrollable": true,
+          "contentPadding": {
+            "topDp": 20,
+            "startDp": 20,
+            "endDp": 20,
+            "bottomDp": 112
+          },
+          "componentSpacingDp": 24
+        },
+        "components": [
+          {
+            "id": "header",
+            "type": "topBar",
+            "visible": true,
+            "props": {
+              "logo": "/assets/targaryen/logo.png",
+              "eyebrow": "CASA",
+              "title": "TARGARYEN",
+              "subtitle": "FOGO E SANGUE",
+              "leading": {
+                "icon": "menu",
+                "contentDescription": "Abrir menu",
+                "enabled": true,
+                "action": {
+                  "type": "open_drawer",
+                  "enabled": true
+                }
+              },
+              "trailing": {
+                "icon": "notifications",
+                "contentDescription": "Abrir notificações",
+                "badgeCount": 1,
+                "enabled": true,
+                "action": {
+                  "type": "navigate",
+                  "route": "/notifications",
+                  "enabled": true
+                }
+              }
+            }
+          },
+          {
+            "id": "hero",
+            "type": "heroBanner",
+            "visible": true,
+            "props": {
+              "eyebrow": "A CASA DO DRAGÃO",
+              "title": "A CASA DO\nDRAGÃO",
+              "description": "Os Targaryen governaram os Sete Reinos por gerações, sustentando sua dinastia com sangue valiriano e o poder dos dragões.",
+              "contentScale": "crop",
+              "sideLabel": "FIRE AND BLOOD",
+              "contentAlignment": "start",
+              "imageAlignment": "end",
+              "button": {
+                "title": "CONHECER A CASA",
+                "icon": "arrow_forward",
+                "enabled": true,
+                "action": {
+                  "type": "navigate",
+                  "route": "/house/targaryen",
+                  "enabled": true
+                }
+              },
+              "pagination": {
+                "visible": true,
+                "selectedIndex": 0,
+                "itemCount": 4
+              },
+              "backgroundImage": "/assets/targaryen/banner.png"
+            }
+          },
+          {
+            "id": "quick-menu",
+            "type": "iconGrid",
+            "visible": true,
+            "props": {
+              "columns": 5,
+              "horizontalScroll": true,
+              "items": [
+                {
+                  "id": "dragons",
+                  "title": "DRAGÕES",
+                  "icon": "dragon_egg",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/dragons",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "members",
+                  "title": "MEMBROS",
+                  "icon": "crown",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/house/targaryen/members",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "fortresses",
+                  "title": "FORTALEZAS",
+                  "icon": "castle",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/fortresses",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "history",
+                  "title": "HISTÓRIA",
+                  "icon": "history",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/house/targaryen/history",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "decrees",
+                  "title": "DECRETOS",
+                  "icon": "description",
+                  "enabled": false,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/decrees",
+                    "enabled": false
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "members",
+            "type": "horizontalCarousel",
+            "visible": true,
+            "props": {
+              "title": "MEMBROS DA CASA",
+              "accentBar": true,
+              "showSeeAll": true,
+              "seeAll": {
+                "title": "VER TODOS",
+                "action": {
+                  "type": "navigate",
+                  "route": "/house/targaryen/members",
+                  "enabled": true
+                }
+              },
+              "items": [
+                {
+                  "id": "viserys-i-targaryen",
+                  "title": "Viserys I",
+                  "subtitle": "Rei dos Sete Reinos",
+                  "image": "/assets/targaryen/members/viserys_i_targaryen.png",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/characters/viserys-i-targaryen",
+                    "enabled": true
+                  },
+                  "badge": "leader"
+                },
+                {
+                  "id": "daemon-targaryen",
+                  "title": "Daemon",
+                  "subtitle": "Príncipe, cavaleiro de Caraxes",
+                  "image": "/assets/targaryen/members/daemon_targaryen.png",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/characters/daemon-targaryen",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "rhaenys-targaryen",
+                  "title": "Rhaenys",
+                  "subtitle": "A Rainha Que Nunca Foi",
+                  "image": "/assets/targaryen/members/rhaenys_targaryen.png",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/characters/rhaenys-targaryen",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "rhaenyra-targaryen",
+                  "title": "Rhaenyra",
+                  "subtitle": "Herdeira nomeada por Viserys",
+                  "image": "/assets/targaryen/members/rhaenyra_targaryen.png",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/characters/rhaenyra-targaryen",
+                    "enabled": true
+                  },
+                  "badge": "heir"
+                },
+                {
+                  "id": "jacaerys-velaryon",
+                  "title": "Jacaerys",
+                  "subtitle": "Herdeiro de Rhaenyra",
+                  "image": "/assets/targaryen/members/jacaerys_velaryon.png",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/characters/jacaerys-velaryon",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "lucerys-velaryon",
+                  "title": "Lucerys",
+                  "subtitle": "Segundo filho de Rhaenyra",
+                  "image": "/assets/targaryen/members/lucerys_velaryon.png",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/characters/lucerys-velaryon",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "joffrey-velaryon",
+                  "title": "Joffrey",
+                  "subtitle": "Terceiro filho de Rhaenyra",
+                  "image": "/assets/targaryen/members/joffrey_velaryon.png",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/characters/joffrey-velaryon",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "aegon-iii-targaryen",
+                  "title": "Aegon III",
+                  "subtitle": "Filho de Rhaenyra e Daemon",
+                  "image": "/assets/targaryen/members/aegon_iii_targaryen.png",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/characters/aegon-iii-targaryen",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "viserys-ii-targaryen",
+                  "title": "Viserys II",
+                  "subtitle": "Filho de Rhaenyra e Daemon",
+                  "image": "/assets/targaryen/members/viserys_ii_targaryen.png",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/characters/viserys-ii-targaryen",
+                    "enabled": true
+                  }
+                }
+              ],
+              "horizontalScroll": true
+            }
+          },
+          {
+            "id": "news",
+            "type": "newsList",
+            "visible": true,
+            "props": {
+              "title": "ÚLTIMAS NOTÍCIAS",
+              "accentBar": true,
+              "showSeeAll": true,
+              "seeAll": {
+                "title": "VER TODAS",
+                "action": {
+                  "type": "navigate",
+                  "route": "/news?house=targaryen",
+                  "enabled": true
+                }
+              },
+              "displayMode": "featured_first",
+              "maxVisibleItems": 3,
+              "items": [
+                {
+                  "id": "dragons-over-kings-landing",
+                  "category": "DECRETO REAL",
+                  "title": "Dragões sobrevoam Porto Real",
+                  "description": "Relatos confirmam a presença de Syrax e Caraxes nos céus da capital após uma reunião do conselho.",
+                  "image": "/assets/targaryen/news/dragons-over-kings-landing.jpg",
+                  "publishedAt": "2026-07-20T09:00:00-03:00",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/news/dragons-over-kings-landing",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "dragonstone-strengthens-defenses",
+                  "category": "PEDRA DO DRAGÃO",
+                  "title": "Pedra do Dragão reforça suas defesas",
+                  "description": "A fortaleza recebe novos suprimentos e cavaleiros enquanto cresce a tensão entre os pretendentes ao Trono.",
+                  "image": "/assets/targaryen/news/dragonstone-defenses.jpg",
+                  "publishedAt": "2026-07-19T18:30:00-03:00",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/news/dragonstone-strengthens-defenses",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "black-council-gathers",
+                  "category": "CONSELHO NEGRO",
+                  "title": "O Conselho Negro volta a se reunir",
+                  "description": "Rhaenyra convoca seus aliados para discutir os próximos movimentos da Casa Targaryen.",
+                  "image": "/assets/targaryen/news/black-council.jpg",
+                  "publishedAt": "2026-07-18T14:00:00-03:00",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/news/black-council-gathers",
+                    "enabled": true
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "bottom-navigation",
+            "type": "bottomNavigation",
+            "visible": true,
+            "props": {
+              "selectedItem": "home",
+              "items": [
+                {
+                  "id": "home",
+                  "title": "INÍCIO",
+                  "icon": "home",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/sdui?house=targaryen",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "house",
+                  "title": "CASA",
+                  "icon": "crown",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/house/targaryen",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "map",
+                  "title": "MAPA",
+                  "icon": "map",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/map",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "decrees",
+                  "title": "DECRETOS",
+                  "icon": "description",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/decrees",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "profile",
+                  "title": "PERFIL",
+                  "icon": "person",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/profile",
+                    "enabled": true
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "house-home-hightower",
+      "screen": "house_home",
+      "house": "hightower",
+      "version": 1,
+      "schemaVersion": "1.0.0",
+      "layout": "house_home_v1",
+      "payload": {
+        "analytics": {
+          "screenName": "house_home_hightower",
+          "tags": {
+            "house": "hightower",
+            "faction": "green"
+          }
+        },
+        "theme": {
+          "id": "hightower-dark",
+          "statusBarStyle": "light",
+          "navigationBarStyle": "dark",
+          "background": {
+            "color": "#050B08",
+            "contentScale": "crop",
+            "overlayColor": "#66050B08",
+            "image": "/assets/hightower/background.png"
+          },
+          "colors": {
+            "primary": "#77B86A",
+            "primaryDark": "#315E38",
+            "secondary": "#C7A96B",
+            "surface": "#0B1510",
+            "surfaceVariant": "#101E16",
+            "outline": "#2B4031",
+            "textPrimary": "#F2F4EF",
+            "textSecondary": "#9CA69D",
+            "textDisabled": "#536057"
+          },
+          "typography": {
+            "display": {
+              "fontFamily": "serif",
+              "fontSizeSp": 40,
+              "fontWeight": 500,
+              "lineHeightSp": 46,
+              "letterSpacingSp": 1.2
+            },
+            "headline": {
+              "fontFamily": "serif",
+              "fontSizeSp": 24,
+              "fontWeight": 500,
+              "lineHeightSp": 30
+            },
+            "title": {
+              "fontFamily": "sans-serif",
+              "fontSizeSp": 18,
+              "fontWeight": 600,
+              "lineHeightSp": 24
+            },
+            "body": {
+              "fontFamily": "sans-serif",
+              "fontSizeSp": 16,
+              "fontWeight": 400,
+              "lineHeightSp": 24
+            },
+            "label": {
+              "fontFamily": "sans-serif",
+              "fontSizeSp": 13,
+              "fontWeight": 600,
+              "lineHeightSp": 18,
+              "letterSpacingSp": 1.2
+            }
+          },
+          "shapes": {
+            "smallRadiusDp": 12,
+            "cardRadiusDp": 22,
+            "largeRadiusDp": 28,
+            "pillRadiusDp": 999
+          },
+          "spacing": {
+            "screenHorizontalDp": 20,
+            "screenTopDp": 20,
+            "screenBottomDp": 112,
+            "sectionGapDp": 24,
+            "itemGapDp": 12
+          }
+        },
+        "screen": {
+          "orientation": "vertical",
+          "scrollable": true,
+          "contentPadding": {
+            "topDp": 20,
+            "startDp": 20,
+            "endDp": 20,
+            "bottomDp": 112
+          },
+          "componentSpacingDp": 24
+        },
+        "components": [
+          {
+            "id": "header",
+            "type": "topBar",
+            "visible": true,
+            "props": {
+              "logo": "/assets/hightower/logo.png",
+              "eyebrow": "CASA",
+              "title": "HIGHTOWER",
+              "subtitle": "ILUMINAMOS O CAMINHO",
+              "leading": {
+                "icon": "menu",
+                "contentDescription": "Abrir menu",
+                "enabled": true,
+                "action": {
+                  "type": "open_drawer",
+                  "enabled": true
+                }
+              },
+              "trailing": {
+                "icon": "notifications",
+                "contentDescription": "Abrir notificações",
+                "badgeCount": 1,
+                "enabled": true,
+                "action": {
+                  "type": "navigate",
+                  "route": "/notifications",
+                  "enabled": true
+                }
+              }
+            }
+          },
+          {
+            "id": "hero",
+            "type": "heroBanner",
+            "visible": true,
+            "props": {
+              "eyebrow": "A CASA DA TORRE",
+              "title": "A FORÇA\nDA FÉ",
+              "description": "Os Hightower governam Vilavelha a partir da Torre Alta, próximos da Fé dos Sete, da Cidadela e das grandes rotas comerciais.",
+              "backgroundImage": "/assets/hightower/banner.png",
+              "contentScale": "crop",
+              "sideLabel": "WE LIGHT THE WAY",
+              "contentAlignment": "start",
+              "imageAlignment": "end",
+              "button": {
+                "title": "CONHECER A CASA",
+                "icon": "arrow_forward",
+                "enabled": true,
+                "action": {
+                  "type": "navigate",
+                  "route": "/house/hightower",
+                  "enabled": true
+                }
+              },
+              "pagination": {
+                "visible": true,
+                "selectedIndex": 0,
+                "itemCount": 4
+              }
+            }
+          },
+          {
+            "id": "quick-menu",
+            "type": "iconGrid",
+            "visible": true,
+            "props": {
+              "columns": 5,
+              "horizontalScroll": true,
+              "items": [
+                {
+                  "id": "members",
+                  "title": "MEMBROS",
+                  "icon": "tower",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/house/hightower/members",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "history",
+                  "title": "HISTÓRIA",
+                  "icon": "history",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/house/hightower/history",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "knowledge",
+                  "title": "CONHECIMENTO",
+                  "icon": "menu_book",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/knowledge",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "alliances",
+                  "title": "ALIANÇAS",
+                  "icon": "handshake",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/alliances",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "decrees",
+                  "title": "DECRETOS",
+                  "icon": "description",
+                  "enabled": false,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/decrees",
+                    "enabled": false
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "members",
+            "type": "horizontalCarousel",
+            "visible": true,
+            "props": {
+              "title": "MEMBROS DA CASA",
+              "accentBar": true,
+              "showSeeAll": true,
+              "seeAll": {
+                "title": "VER TODOS",
+                "action": {
+                  "type": "navigate",
+                  "route": "/house/hightower/members",
+                  "enabled": true
+                }
+              },
+              "items": [
+                {
+                  "id": "otto-hightower",
+                  "title": "Otto Hightower",
+                  "subtitle": "Mão do Rei",
+                  "image": "/assets/hightower/members/otto_hightower.png",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/characters/otto-hightower",
+                    "enabled": true
+                  },
+                  "badge": "leader"
+                },
+                {
+                  "id": "alicent-hightower",
+                  "title": "Alicent Hightower",
+                  "subtitle": "Rainha Viúva",
+                  "image": "/assets/hightower/members/alicent_hightower.png",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/characters/alicent-hightower",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "aegon-ii-targaryen",
+                  "title": "Aegon II",
+                  "subtitle": "Rei coroado pelos Verdes",
+                  "image": "/assets/hightower/members/aegon_ii_targaryen.png",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/characters/aegon-ii-targaryen",
+                    "enabled": true
+                  },
+                  "badge": "king"
+                },
+                {
+                  "id": "helaena-targaryen",
+                  "title": "Helaena",
+                  "subtitle": "Rainha consorte",
+                  "image": "/assets/hightower/members/helaena_targaryen.png",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/characters/helaena-targaryen",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "aemond-targaryen",
+                  "title": "Aemond",
+                  "subtitle": "Cavaleiro de Vhagar",
+                  "image": "/assets/hightower/members/aemond_targaryen.png",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/characters/aemond-targaryen",
+                    "enabled": true
+                  }
+                }
+              ],
+              "horizontalScroll": true
+            }
+          },
+          {
+            "id": "news",
+            "type": "newsList",
+            "visible": true,
+            "props": {
+              "title": "ÚLTIMAS NOTÍCIAS",
+              "accentBar": true,
+              "showSeeAll": true,
+              "seeAll": {
+                "title": "VER TODAS",
+                "action": {
+                  "type": "navigate",
+                  "route": "/news?house=hightower",
+                  "enabled": true
+                }
+              },
+              "displayMode": "featured_first",
+              "maxVisibleItems": 3,
+              "items": [
+                {
+                  "id": "citadel-expands-archives",
+                  "category": "VILAVELHA",
+                  "title": "A Cidadela amplia seus arquivos",
+                  "description": "Novos registros chegam à cidade enquanto os meistres reúnem relatos sobre a guerra e os dragões.",
+                  "image": "/assets/hightower/news/citadel-archives.jpg",
+                  "publishedAt": "2026-07-20T09:00:00-03:00",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/news/citadel-expands-archives",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "oldtown-strengthens-alliances",
+                  "category": "ALIANÇAS",
+                  "title": "Vilavelha fortalece alianças no sul",
+                  "description": "Emissários de casas aliadas chegam à Torre Alta para discutir comércio, defesa e apoio aos Verdes.",
+                  "image": "/assets/hightower/news/oldtown-alliance.jpg",
+                  "publishedAt": "2026-07-19T16:00:00-03:00",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/news/oldtown-strengthens-alliances",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "hightower-host-prepares",
+                  "category": "EXÉRCITO HIGHTOWER",
+                  "title": "As forças da Torre Alta se preparam para marchar",
+                  "description": "Homens, provisões e estandartes são reunidos em Vilavelha antes da próxima campanha.",
+                  "image": "/assets/hightower/news/hightower-host.jpg",
+                  "publishedAt": "2026-07-18T11:30:00-03:00",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/news/hightower-host-prepares",
+                    "enabled": true
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "bottom-navigation",
+            "type": "bottomNavigation",
+            "visible": true,
+            "props": {
+              "selectedItem": "home",
+              "items": [
+                {
+                  "id": "home",
+                  "title": "INÍCIO",
+                  "icon": "home",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/sdui?house=hightower",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "house",
+                  "title": "CASA",
+                  "icon": "tower",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/house/hightower",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "map",
+                  "title": "MAPA",
+                  "icon": "map",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/map",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "decrees",
+                  "title": "DECRETOS",
+                  "icon": "description",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/decrees",
+                    "enabled": true
+                  }
+                },
+                {
+                  "id": "profile",
+                  "title": "PERFIL",
+                  "icon": "person",
+                  "enabled": true,
+                  "action": {
+                    "type": "navigate",
+                    "route": "/profile",
+                    "enabled": true
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

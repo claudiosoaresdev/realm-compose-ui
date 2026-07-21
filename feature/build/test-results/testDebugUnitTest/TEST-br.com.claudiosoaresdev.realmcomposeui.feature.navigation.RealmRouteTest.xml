@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="br.com.claudiosoaresdev.realmcomposeui.feature.navigation.RealmRouteTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-07-21T13:21:19.688Z" hostname="MacBook-Pro-de-Claudio.local" time="0.022">
+  <properties/>
+  <testcase name="rota de casa especifica vira destino Houses" classname="br.com.claudiosoaresdev.realmcomposeui.feature.navigation.RealmRouteTest" time="0.017"/>
+  <testcase name="casa e extraida da query e do path" classname="br.com.claudiosoaresdev.realmcomposeui.feature.navigation.RealmRouteTest" time="0.001"/>
+  <testcase name="rota sdui com query vira destino Home" classname="br.com.claudiosoaresdev.realmcomposeui.feature.navigation.RealmRouteTest" time="0.0"/>
+  <testcase name="rota sem destino local devolve null em vez de navegar errado" classname="br.com.claudiosoaresdev.realmcomposeui.feature.navigation.RealmRouteTest" time="0.0"/>
+  <testcase name="rota sem casa devolve null" classname="br.com.claudiosoaresdev.realmcomposeui.feature.navigation.RealmRouteTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

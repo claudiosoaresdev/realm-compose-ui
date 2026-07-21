@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/claudiosoares/www/claudiosoaresdev/Android/estudos/RealmComposeUI/feature/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest339791518019385417.xml:2:13-83
+INJECTED from /Users/claudiosoares/www/claudiosoaresdev/Android/estudos/RealmComposeUI/feature/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest339791518019385417.xml:2:13-83
+	package
+		INJECTED from /Users/claudiosoares/www/claudiosoaresdev/Android/estudos/RealmComposeUI/feature/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest339791518019385417.xml
+	xmlns:android
+		ADDED from /Users/claudiosoares/www/claudiosoaresdev/Android/estudos/RealmComposeUI/feature/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest339791518019385417.xml:2:23-81
+uses-sdk
+INJECTED from /Users/claudiosoares/www/claudiosoaresdev/Android/estudos/RealmComposeUI/feature/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest339791518019385417.xml reason: use-sdk injection requested
+INJECTED from /Users/claudiosoares/www/claudiosoaresdev/Android/estudos/RealmComposeUI/feature/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest339791518019385417.xml
+INJECTED from /Users/claudiosoares/www/claudiosoaresdev/Android/estudos/RealmComposeUI/feature/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest339791518019385417.xml
+	android:targetSdkVersion
+		INJECTED from /Users/claudiosoares/www/claudiosoaresdev/Android/estudos/RealmComposeUI/feature/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest339791518019385417.xml
+	android:minSdkVersion
+		INJECTED from /Users/claudiosoares/www/claudiosoaresdev/Android/estudos/RealmComposeUI/feature/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest339791518019385417.xml
