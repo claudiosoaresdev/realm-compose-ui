@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="br.com.claudiosoaresdev.realmcomposeui.feature.presentation.host.SduiHostStateTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-07-21T13:21:19.712Z" hostname="MacBook-Pro-de-Claudio.local" time="0.001">
-  <properties/>
-  <testcase name="sem casa ativa o rodizio comeca pela primeira" classname="br.com.claudiosoaresdev.realmcomposeui.feature.presentation.host.SduiHostStateTest" time="0.0"/>
-  <testcase name="proxima casa volta ao inicio depois da ultima" classname="br.com.claudiosoaresdev.realmcomposeui.feature.presentation.host.SduiHostStateTest" time="0.0"/>
-  <testcase name="proxima casa alterna targaryen para hightower" classname="br.com.claudiosoaresdev.realmcomposeui.feature.presentation.host.SduiHostStateTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

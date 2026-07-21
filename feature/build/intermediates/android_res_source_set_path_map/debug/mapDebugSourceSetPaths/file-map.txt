@@ -1,9 +1,0 @@
-br.com.claudiosoaresdev.realmcomposeui.feature-pngs-0 /Users/claudiosoares/www/claudiosoaresdev/Android/estudos/RealmComposeUI/feature/build/generated/res/pngs/debug
-br.com.claudiosoaresdev.realmcomposeui.feature-updated_navigation_xml-1 /Users/claudiosoares/www/claudiosoaresdev/Android/estudos/RealmComposeUI/feature/build/generated/updated_navigation_xml/debug
-br.com.claudiosoaresdev.realmcomposeui.feature-mergeDebugResources-2 /Users/claudiosoares/www/claudiosoaresdev/Android/estudos/RealmComposeUI/feature/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
-br.com.claudiosoaresdev.realmcomposeui.feature-mergeDebugResources-3 /Users/claudiosoares/www/claudiosoaresdev/Android/estudos/RealmComposeUI/feature/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
-br.com.claudiosoaresdev.realmcomposeui.feature-debug-4 /Users/claudiosoares/www/claudiosoaresdev/Android/estudos/RealmComposeUI/feature/build/intermediates/merged_res/debug/mergeDebugResources
-br.com.claudiosoaresdev.realmcomposeui.feature-debug-5 /Users/claudiosoares/www/claudiosoaresdev/Android/estudos/RealmComposeUI/feature/build/intermediates/packaged_res/debug/packageDebugResources
-br.com.claudiosoaresdev.realmcomposeui.feature-debug-6 /Users/claudiosoares/www/claudiosoaresdev/Android/estudos/RealmComposeUI/feature/src/debug/res
-br.com.claudiosoaresdev.realmcomposeui.feature-main-7 /Users/claudiosoares/www/claudiosoaresdev/Android/estudos/RealmComposeUI/feature/src/main/res
-gradleHome-0 /Users/claudiosoares/.gradle
